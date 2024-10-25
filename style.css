@@ -1,0 +1,326 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+h1{
+    display: inline-block;
+    background-color: yellow;
+    font-size: 40px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color  0.5s ease;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    transition: box-shadow 0.5s ease, border-color 1s ease;
+}
+h1:hover{
+    background-color:#A594F9;
+    border: 2px solid black;
+    color: aliceblue;
+    box-shadow: 5px 10px #888888;
+}
+li{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.5s ease, font-weight 1s ease, text-decoration 0.5s ease;
+}
+
+a:hover {
+    color: rgb(184, 13, 112);
+    font-weight: bolder;
+    border-bottom: 2px solid rgb(184, 13, 112);
+}
+nav{
+    position: fixed;
+    width: 100%;
+    border: 2px solid black;
+    background-color: #A594F9;
+}
+hr{
+    border: none; 
+    border-top: 2px solid #333; 
+    width: 100%; 
+    margin: 20px auto;
+}
+#navbar_content{
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    margin: 15px;
+    padding-right: 100px;
+}
+.section{
+    padding: 50px;
+}
+#section1{
+    padding-top:50px ;
+    background-color: #E5D9F2;
+}
+#section2{
+    background-color:#bba9ce;
+}
+#section3{
+    background-color:#CDC1FF;
+}
+#section4{
+    background-color: #E5D9F2;
+}
+#section5{
+    background-color: #CDC1FF;
+}
+.section1_content{
+    display: flex;
+    gap: 50px;
+}
+#section2_content{
+    display: flex;
+    flex-direction:column;
+    gap: 100px;
+
+}
+#section3_content{
+    display: flex;
+    flex-direction:column;
+    gap: 50px;
+}
+#section4_content{
+    display: flex;
+    justify-content: space-around;
+}
+.section1_position_content{
+    padding: 100px 0 0 100px;
+    text-align: justify;
+}
+#image_section1{
+    width: 400px;
+    height:400px ;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+#image_position{
+    padding:50px;
+    transition: padding-right 0.5s ease;
+}
+#image_position:hover{
+    padding-right: 10px;
+}
+#title_name{
+    font-size: xx-large;
+    text-align: justify;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#section1_button {
+    padding: 13px 30px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+    background-color: yellow;
+    color: black;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#section1_button:hover {
+    background-color: gold;      
+    color: white;                 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);       
+}
+#button_position{
+    padding-top: 30px;
+    text-align: center;
+}
+.about_me_content{
+    display: flex;
+    gap: 50px;
+}
+.about_me_text{
+    text-align: justify;
+}
+.about_me_photos {
+    width: 350px;
+    height: 350px;
+    transition: border-radius 0.5s ease;
+    border-radius: 0px;
+    border: 3px solid violet;
+}
+
+#myself {
+    width: 350px;
+    height: 350px;
+    transition: border-radius 0.5s ease;
+    border-radius: 0px;
+    border: 3px solid violet;
+}
+
+.about_me_photos:hover,
+#myself:hover {
+    border-radius: 50%;
+}
+.education_content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.education_text{
+    padding-top: 15px;
+    text-align: left;
+}
+.education_photos{
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid rgb(143, 103, 125);
+    background-position: center;
+}
+.school_achievements_title{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.achievements_list{
+    padding-left: 20px;
+}
+.Achievements{
+    list-style-type: square;
+
+}
+.school_picture {
+    width: 400px;
+    border-radius: 50px;
+    transition: border 0.3s ease, box-shadow 0.3s ease; 
+    transition: transform 0.5s ease;
+}
+
+#school_picture {
+    width: 300px;
+    border-radius: 50px;
+    transition: border 0.7s ease, box-shadow 0.7s ease;
+    transition: transform 0.5s ease;
+}
+
+#elementary {
+    width: 200px;
+    border-radius: 50px;
+    transition: border 0.7s ease, box-shadow 0.7s ease; 
+    transition: transform 0.5s ease;
+
+}
+
+.school_picture:hover, 
+#school_picture:hover, 
+#elementary:hover {
+    border: 5px solid black;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+#summarize_description{
+    text-align: center;
+    padding-bottom: 20px;
+}
+#summarize_edu_back{
+    text-align: center;
+}
+.skills_list{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.list_skills{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 20px 30px 10px 30px;
+    gap: 10px;
+    transition: background-color 0.5s ease,box-shadow 0.5s ease;
+}
+.list_skills:hover{
+    background-color: #A594F9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.list{
+    padding-top: 10px;
+
+}
+#list_flex{
+    display: flex;
+    flex-direction: column;
+}
+.list_position{
+    padding-right: 200px;
+}
+.skills_logo{
+    width: 50px;
+    transition: transform 0.5s ease;
+}
+.skills_logo:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+.grid-item{
+    padding-left:30px ;
+}
+#contact_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding-bottom: 100px;
+}
+
+.contact_items {
+    display: flex;
+    align-items: center; 
+    gap: 5px;
+}
+
+.contact_icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s ease;
+}
+
+.contact_icon:hover {
+    transform: scale(1.3);
+}
+
+.contact_text {
+    font-weight: bold; 
+    color: black; 
+}
+
+#contact_flex {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 40px;
+}
+
+#formal_pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid black;
+    position: relative;
+    bottom: 40px;    
+    transition: transform 0.5s ease;
+}
+#formal_pic:hover{
+    transform: scale(1.1);
+}
